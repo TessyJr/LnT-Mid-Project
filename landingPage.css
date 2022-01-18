@@ -403,6 +403,83 @@ header .menu-icon {
 /* Portfolio */
 .portfolio {
   min-height: 100vh;
+  background-color: #b1d0e0;
+  color: #1a374d;
+  padding-bottom: 100px;
+}
+.portfolio h1 {
+  text-align: center;
+  font-size: 64px;
+  padding-top: 100px;
+}
+.portfolio .container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.portfolio .container .card {
+  width: 25%;
+  height: fit-content;
+  background-color: #406882;
+  border-radius: 24px;
+  padding: 24px;
+  margin: 24px;
+}
+.portfolio .container .card img {
+  width: 100%;
+  border-radius: 12px 12px 0 0;
+}
+.portfolio .container .card .desc {
+  background-color: #b1d0e0;
+  /* margin-top: 24px; */
+  border-radius: 0 0 12px 12px;
+  padding: 16px;
+  height: auto;
+}
+.portfolio .container .card .desc h2 {
+  margin-bottom: 8px;
+}
+.portfolio .container .card .desc p {
+  font-size: 20px;
+}
+.portfolio .container .card .desc .links button {
+  background: none;
+  font-size: 20px;
+  padding: 8px;
+  border-radius: 8px;
+  margin-top: 12px;
+  width: 100%;
+  transition: 0.3s;
+}
+.portfolio .container .card .desc .links button.repo {
+  border: 1px solid #171515;
+}
+.portfolio .container .card .desc .links button.repo:hover {
+  background-color: #171515;
+  color: white;
+}
+.portfolio .container .card .desc .links button.preview {
+  border: 1px solid #1a374d;
+}
+.portfolio .container .card .desc .links button.preview:hover {
+  background-color: #1a374d;
+  color: #b1d0e0;
+}
+.portfolio .container .card .desc .links button i {
+  margin-right: 4px;
+}
+
+/* Contact Us */
+.contact {
+  min-height: 100vh;
+  padding: 100px 0;
+}
+.contact h1 {
+  color: #1a374d;
+  font-size: 64px;
+  text-align: center;
 }
 
 /* Media Query */
@@ -471,6 +548,9 @@ header .menu-icon {
     display: block;
     width: 100%;
   }
+  .portfolio .container .card {
+    width: 40%;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -531,6 +611,9 @@ header .menu-icon {
     height: 60px;
     width: 60px;
     font-size: 24px;
+  }
+  .portfolio .container .card {
+    width: 80%;
   }
 }
 
