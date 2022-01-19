@@ -14,6 +14,30 @@ body {
 }
 
 /* animations */
+@keyframes jump {
+  0% {
+    transform: scale(1, 1) translateY(0);
+  }
+  10% {
+    transform: scale(1.1, 0.9) translateY(0);
+  }
+  30% {
+    transform: scale(0.9, 1.1) translateY(-25px);
+  }
+  50% {
+    transform: scale(1.05, 0.95) translateY(0);
+  }
+  58% {
+    transform: scale(1, 1) translateY(-7px);
+  }
+  65% {
+    transform: scale(1, 1) translateY(0);
+  }
+  100% {
+    transform: scale(1, 1) translateY(0);
+  }
+}
+
 @keyframes bounce {
   0% {
     transform: translateY(0px);
@@ -398,6 +422,24 @@ header .menu-icon {
 }
 .about .container .edu table tbody tr:nth-child(2) {
   background-color: #a0c4d6;
+}
+.about .container .aboutContainer .desc1 .bottom .socialMedia {
+  margin-top: 28px;
+}
+.about .container .aboutContainer .desc1 .bottom .socialMedia a:nth-child(1) {
+  animation: jump 2s ease infinite;
+}
+.about .container .aboutContainer .desc1 .bottom .socialMedia a:nth-child(2) {
+  animation: jump 2s ease infinite 0.2s;
+}
+.about .container .aboutContainer .desc1 .bottom .socialMedia a:nth-child(3) {
+  animation: jump 2s ease infinite 0.4s;
+}
+.about .container .aboutContainer .desc1 .bottom .socialMedia a:nth-child(4) {
+  animation: jump 2s ease infinite 0.6s;
+}
+.about .container .aboutContainer .desc1 .bottom .socialMedia a:nth-child(5) {
+  animation: jump 2s ease infinite 0.8s;
 }
 
 /* Portfolio */
